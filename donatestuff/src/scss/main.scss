@@ -1,0 +1,10 @@
+@import './reset.scss';
+@import './_colors.scss';
+@import './_fonts.scss';
+@import './header.scss';
+@import './threeColumns.scss';
+@import './4steps.scss';
+
+body {
+    font-family: $font-base;
+}

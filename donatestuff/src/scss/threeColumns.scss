@@ -1,0 +1,21 @@
+
+#threecolumn{
+    background-color: $yellow;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 1300px;
+        .col{
+            display: block;
+            text-align: center;
+            max-width: 150px;
+            padding: 20px 0;
+            .count{
+                font-size: 50px;
+            }
+        }
+    }
+}

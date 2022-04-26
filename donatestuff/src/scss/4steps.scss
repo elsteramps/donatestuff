@@ -1,0 +1,50 @@
+.fourstepslogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.colsection{
+    .container{
+        width: 1300px;
+        display: flex;
+        justify-content: space-between;
+    .col{
+        padding-top: 1em;
+        width: 150px;
+        text-align: center;
+        .coltext{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .textundertheline{
+            text-align: center;
+        }
+        
+    }
+    #lupa{
+        padding-top: 0;
+    }
+    }
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: $white;
+}
+
+.buttonn{
+    display: flex;
+    justify-content: center;
+.btn{
+    font-size: xx-large;
+    text-decoration: none;
+    width: 200px;
+    color: $grey;
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 1em;
+    border: 2px $grey solid
+}
+}
