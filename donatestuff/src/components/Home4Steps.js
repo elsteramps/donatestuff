@@ -43,7 +43,7 @@ function Home4Steps(props) {
             </section>
             <div className='buttonn'>
                 <Link to='/signup' className='btn'>ODDAJ RZECZY</Link>
-                </div>
+            </div>
         </div>
     );
 }

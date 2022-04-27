@@ -1,0 +1,31 @@
+#about{
+    margin-top: 2em;
+    width: 100vw;
+    display: flex;
+    .text{
+        width: 50vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        position: relative;
+        .textcontent{
+            padding: 250px 70px 0 70px;
+            text-align: center;
+        }
+        .signature{
+            position: absolute;
+            top: 65%;
+            left: 60%;
+        }
+    }
+    .photo{
+        background-image: url('../assets/People.jpg');
+        background-size: cover;
+        width: 960px;
+        background-repeat: no-repeat;
+        height: 900px;
+    }
+}
