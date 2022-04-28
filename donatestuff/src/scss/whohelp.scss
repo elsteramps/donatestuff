@@ -1,0 +1,60 @@
+#whohelp{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .label{
+            padding-top: 30px;
+            text-align: center;
+        }
+        .helpBtns{
+            display: flex;
+            justify-content: center;
+        .btn{
+            font-size: xx-large;
+            text-decoration: none;
+            width: 300px;
+            color: $grey;
+            padding: 0 20px;
+            margin: 20px 30px;
+            text-align: center;
+            margin-top: 1em;
+            border: 2px $grey solid;
+            background-color: #fff;
+        }
+        }
+        .text{
+            margin: 20px;
+            text-align: center;
+        }
+        .content{
+           .element{
+               width: 1000px;
+               display: flex;
+                justify-content: space-between;
+           }
+        }
+    }
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    .pagination{
+        display: flex;
+        list-style: none;
+        .page-item{
+            &:active{
+                border: 1px solid $grey;
+            }
+            .page-link{
+                background-color: #fff;
+                border: none;
+            }
+        }
+    }
+}

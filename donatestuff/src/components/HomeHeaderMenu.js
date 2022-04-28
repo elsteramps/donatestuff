@@ -23,7 +23,7 @@ function HomeHeaderMenu(props) {
                     <LinkRoll activeClass="active" className='link' to="about" spy={true} smooth={true} duration={500}>O nas</LinkRoll>
                 </li>
                 <li className='navlink'>
-                    <LinkRoll activeClass="active" className='link' to="threecolumn" spy={true} smooth={true} duration={500}>Fundacja i organizacje</LinkRoll>
+                    <LinkRoll activeClass="active" className='link' to="whohelp" spy={true} smooth={true} duration={500}>Fundacja i organizacje</LinkRoll>
                 </li>
                 <li className='navlink'>
                     <LinkRoll activeClass="active" className='link' to="contact" spy={true} smooth={true} duration={500}>Kontakt</LinkRoll>
