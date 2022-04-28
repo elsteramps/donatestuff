@@ -4,7 +4,7 @@ import Pagination from './Pagination';
 
 function HomeWhoHelp(props) {
 
-const fundations = ["Fundacja 'Dbam o Zdrowie'", "Fundacja 'Dla dzieci'", "Fundacja 'Bez domu'", "Fundacja 'Dbam o Zdrowie'", "Fundacja 'Jebać PiS'", "Fundacja 'Jebać psy'"];
+const fundations = ["Fundacja 'Dbam o Zdrowie'", "Fundacja 'Dla dzieci'", "Fundacja 'Bez domu'", "Fundacja 'Dbam o Zdrowie'", "Fundacja 'alfjlaksflkasfj'", "Fundacja 'asjkfhakjhfskbajsdajbkfd'"];
 const organizations = ["Organizacja Lorem ipsum 1", "Organizacja Lorem ipsum 2", "Organizacja Lorem ipsum 3", "Organizacja Lorem ipsum 4", "Organizacja Lorem ipsum 5"];
 const local = ["Zbiórka 'Lorem ipsum 1'", "Zbiórka 'Lorem ipsum 2'", "Zbiórka 'Lorem ipsum 3'", "Zbiórka 'Lorem ipsum 4'", "Zbiórka 'Lorem ipsum 5'"]
 
