@@ -1,0 +1,83 @@
+#contact{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../assets/Background-Contact-Form.jpg');
+    width: 100%;
+    height: 1000px;
+    .content{
+        position: relative;
+        .msg-scs{
+            display: none;
+            color: green;
+        }
+        .active-scs{
+            display: block;
+        }
+        h2{
+            font-weight: 400;
+            text-align: center;
+        }
+        img{
+            position: absolute;
+            left: 90px;
+            margin-bottom: 50px;
+        }
+        margin-right: 6em;
+        form{
+            margin-top: 4em;
+        .nameEmail{
+            .msg-failed{
+                color: red;
+                display: none;
+            }
+            .active-failed{
+                display: block;
+            }
+            display: inline-block;
+            margin: 0 20px;
+            input{
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $black;
+            }
+        }
+        label{
+            text-align: left;
+            margin: 10px 10px 10px 0;
+            color: $black;
+            display: block;
+        }
+        .message{
+            .msg-failed{
+                color: red;
+                display: none;
+            }
+            .active-failed{
+                display: block;
+            }
+        #message{
+            margin-left: 20px;
+            
+        }
+        textarea{
+            width: 390px;
+            height: 50px;
+            margin-left: 20px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid $black;
+        }
+        .messageButton{
+        display: block;
+        position: absolute;
+        margin-top: 30px;
+        left: 315px;
+        padding: 10px 30px;
+        background-color: transparent;
+        border: 1px solid $black;
+        }
+    }
+    }
+    }
+}
