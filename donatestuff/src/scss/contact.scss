@@ -10,6 +10,8 @@
         .msg-scs{
             display: none;
             color: green;
+            text-align: center;
+            margin-top: 4em;
         }
         .active-scs{
             display: block;
@@ -21,7 +23,7 @@
         img{
             position: absolute;
             left: 90px;
-            margin-bottom: 50px;
+            margin-bottom: 50px
         }
         margin-right: 6em;
         form{
@@ -52,6 +54,7 @@
             .msg-failed{
                 color: red;
                 display: none;
+                margin-left: 20px;
             }
             .active-failed{
                 display: block;

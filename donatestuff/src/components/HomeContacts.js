@@ -15,7 +15,7 @@ function HomeContacts(props) {
 
     const onSubmitHandler = async e => {
         e.preventDefault();
-        if(nameValue !== '' && nameValue.indexOf(' ') !== 0 && emailValue.match(pattern) && messageValue !== ''){
+        if(nameValue !== '' && nameValue.indexOf(' ') !== 0 && emailValue.match(pattern) && messageValue !== '' && messageValue.length >= 120){
             
             const data = {
                 name: nameValue,
@@ -23,9 +23,10 @@ function HomeContacts(props) {
                 message: messageValue 
             }
 
-            const res = await axios.post('https://fer-api.coderslab.pl/v1/portfolio/contact', data)
+            await axios.post('https://fer-api.coderslab.pl/v1/portfolio/contact', data)
             .then(res => {
                 if (res.data !== 0){
+                    setFailedActiveClass('')
                     setSuccessActiveClass('active-scs');
                 }
             })
@@ -35,6 +36,7 @@ function HomeContacts(props) {
             
         }
         else{
+            setSuccessActiveClass('');
             setFailedActiveClass('active-failed')  
         }
     }
@@ -44,23 +46,23 @@ function HomeContacts(props) {
             <div className='content'>
                 <h2>Skontaktuj się z nami</h2>
                 <img src={dec} alt='dec'></img>
-                <p className={`msg-scs ${successActiveClass}`}>Widomość została wysłana</p>
-                <form type='submit'>
+                <span className={`msg-scs ${successActiveClass}`}>Widomość została wysłana</span>
+                <form type='submit' onSubmit={onSubmitHandler}>
                     <p className='nameEmail'>
-                    <label for='name'>Wpisz swoje imię</label>
-                    <input type='text' id='name' name='name' value={nameValue} onChange={(e) => setNameValue(e.target.value)}></input>
-                    <p className={`msg-failed ${failedActiveClass}`}>Podaj właściwe dane</p>
+                        <label for='name'>Wpisz swoje imię</label>
+                        <input type='text' id='name' name='name' value={nameValue} onChange={(e) => setNameValue(e.target.value)}></input>
+                        <span className={`msg-failed ${failedActiveClass}`}>Podaj właściwe dane</span>
                     </p>
-                    <p className='nameEmail'>
-                    <label for='email'>Wpisz swój email</label>
-                    <input type='text' id='email' name='email' value={emailValue} onChange={(e) => setEmailValue(e.target.value)}></input>
-                    <p className={`msg-failed ${failedActiveClass}`}>Podaj właściwe dane</p>
+                        <p className='nameEmail'>
+                        <label for='email'>Wpisz swój email</label>
+                        <input type='text' id='email' name='email' value={emailValue} onChange={(e) => setEmailValue(e.target.value)}></input>
+                        <span className={`msg-failed ${failedActiveClass}`}>Podaj właściwe dane</span>
                     </p>
-                    <p className='message'>
-                    <label id='message' for='message'>Wpisz swoją wiadomość</label>
-                    <textarea type='text' name='message' value={messageValue} onChange={(e) => setMessageValue(e.target.value)}></textarea>
-                    <input onClick={onSubmitHandler} className='messageButton' type='submit' value='Wyślij!'></input>
-                    <p className={`msg-failed ${failedActiveClass}`}>Podaj właściwe dane</p>
+                        <p className='message'>
+                        <label id='message' for='message'>Wpisz swoją wiadomość</label>
+                        <textarea type='text' name='message' value={messageValue} onChange={(e) => setMessageValue(e.target.value)}></textarea>
+                        <input onClick={onSubmitHandler} className='messageButton' type='submit' value='Wyślij!'></input>
+                        <span className={`msg-failed ${failedActiveClass}`}>Podaj właściwe dane</span>
                     </p>
                 </form>
             </div>
