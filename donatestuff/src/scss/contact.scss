@@ -42,6 +42,9 @@
                 background-color: transparent;
                 border: none;
                 border-bottom: 1px solid $black;
+                &:focus{
+                    outline: none;
+                }
             }
         }
         label{
@@ -70,6 +73,9 @@
             background-color: transparent;
             border: none;
             border-bottom: 1px solid $black;
+            &:focus{
+                outline: none;
+            }
         }
         .messageButton{
         display: block;
